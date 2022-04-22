@@ -26,7 +26,8 @@ metadata:
   name: nginx-lb 
 spec: 
   ports: 
-  - name: 80 
+  - name: nginx-port
+    port: 80
     targetPort: 80
   selector: 
     app: nginx
